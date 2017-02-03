@@ -1,6 +1,6 @@
 # LemonTree
 
-![alt tag](http://lemontree.pt/en/img/LT_Logo_Preto.png =x250)
+<img src="http://lemontree.pt/en/img/LT_Logo_Preto.png" width="250" />
 
 Beta - version for when LemonTree-Stay is in construction
 
