@@ -1,0 +1,58 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+html{
+ 	height:100%;
+ 	min-height:100%;
+}
+
+body {
+	background-image: url("images/background.gif");
+	background-repeat: no-repeat; 
+	background-position: top;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	font-size: 100%;
+}
+
+form {
+	text-align: center;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+	margin-top: 2.5em;
+    width: 25.7%;
+    max-width: 55em;
+    min-width: 15em;
+}
+
+.lemon {
+    margin-right: 35%;
+    margin-top: -2em;
+    width: 12.5%;
+}
+
+.input {
+	width: 15%;
+	max-width: 55em;
+	min-width: 15em;
+	height: 2em;
+}
+
+.submit {
+	font-size: 100%;
+	font-weight: 700;
+	text-align:center;
+	margin-top: .5em;
+}

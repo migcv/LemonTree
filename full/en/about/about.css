@@ -1,0 +1,141 @@
+:root {
+  --margin-sections: 1em;
+}
+
+/********************************************
+ *  HEADER BEGIN                            *
+ ********************************************/
+
+header {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+}
+
+.header-img {
+    width:100%;
+}
+
+/********************************************
+ *  HEADER END                              *
+ ********************************************
+ *  ABOUT BEGIN                             *
+ ********************************************/
+
+.segment {
+    padding-bottom: 25px;
+    color: black;
+}
+
+.segment-header {
+    text-transform: uppercase;
+}
+
+.content {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.image {
+    margin-top: 1em;
+    padding: 0;
+}
+
+.mobile-image {
+    
+}
+
+@media(max-width:767px) { /* XS */
+    #about {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #about-text {
+        padding: 0;
+    }
+    #images-vertical {
+        display: none;
+    }
+    #images-horizontal .container {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        width: 100%;
+    }
+    .image {
+        width: 95%;
+    }
+}
+
+@media (min-width: 768px) { /* SM */
+    #about {
+        width: 765px;
+    }
+    #about-text {
+        padding: 0;
+    }
+    #images-vertical {
+        display: none;
+    }
+    #images-horizontal .container {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        width: 100%;
+    }
+    .image {
+        width: 96%;
+    }
+}
+
+@media(min-width:992px) {  /* MD */
+    #about {
+        width: 970px;
+    }
+    #concept {
+        margin-top: -.4em;
+    }
+    #about-text {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #images-vertical {
+        text-align: right;
+        padding: 0;
+        display: block;
+    }
+    #images-horizontal {
+        display: none;
+    }
+    .image {
+        width: 230px;
+    }
+}
+
+/********************************************
+ *  ABOUT END                               *
+ ********************************************
+ *  MEDIA BEGIN                             *
+ ********************************************/
+
+@media(max-width:767px) { /* XS */
+    header {
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px) { /* SM */
+    header {
+        width: 765px;
+    }
+}
+
+@media(min-width:992px) { /* MD */
+    header{
+        width: 970px;
+    }
+}
+/********************************************
+ *  MEDIA END                               *
+ ********************************************/

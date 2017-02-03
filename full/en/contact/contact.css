@@ -1,0 +1,170 @@
+/********************************************
+ *  HEADER BEGIN                            *
+ ********************************************/
+
+header {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+}
+
+.header-img {
+    width:100%;
+}
+
+/********************************************
+ *  HEADER END                              *
+ ********************************************
+ *  CONTACTS BEGIN                          *
+ ********************************************/
+
+#contacts {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-header {
+    text-transform: uppercase;
+}
+
+#contacts ul {
+    width: 229px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+}
+
+#contacts ul span {
+    font-weight: bold;
+}
+
+#contacts .mobile {
+    padding: 0;
+    margin: 0;
+}
+
+@media(max-width:767px) {
+    .reception-image {
+        margin-top: 1em;
+        width: 100%;
+    }
+    not-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .reception-image {
+        margin-top: 1em;
+        width: 176px;
+    }
+    mobile {
+        display: none;
+    }
+}
+
+@media(min-width:992px) {
+    .reception-image {
+        margin-top: 1em;
+        width: 227.5px;
+    }
+    mobile {
+        display: none;
+    }
+}
+
+/********************************************
+ *  CONTACTS END                            *
+ ********************************************
+ *  ADRESSES BEGIN                          *
+ ********************************************/
+
+.address-header {
+    text-transform: uppercase;
+}
+
+.map {
+    margin: 0;
+    padding: 0;
+}
+
+.map-left .google-map {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.map-center .google-map {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.map-right .google-map {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+@media(max-width:767px) {
+    .google-map {
+        width: 100%;
+        height:250px;
+    }
+    .map-left .google-map, .map-right .google-map {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    #address {
+        margin-top: 10px;
+    }
+    .google-map {
+        width:235px;
+        height:240px;
+    }
+    .st {
+        margin-top: 36px;    
+    }
+    .rd {
+        margin-top: 17px;
+    }
+}
+
+@media(min-width:992px) {
+    #addresses {
+        margin-top: 10px;
+    }
+    .google-map {
+        width:97.5%;
+        height:300px;
+        margin-top: 10px;
+    }
+}
+
+/********************************************
+ *  ADDRESSES END                           *
+ ********************************************
+ *  MEDIA BEGIN                             *
+ ********************************************/
+
+@media(max-width:767px) {
+    header, #contacts, #addresses {
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        width: 765px;
+    }
+}
+
+@media(min-width:992px) {
+    header {
+        width: 970px;
+    }
+}
+
+/********************************************
+ *  MEDIA BEGIN                             *
+ ********************************************/

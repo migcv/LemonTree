@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LEMON TREE</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Lemon Tree Stay - Faro, Algarve - Portugal">
+    <meta name="keywords" content="faro, algarve, portugal, accommodation, hotel, hostel">
+    <link rel="shortcut icon" href="images/TabLogo.jpg">
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+    <link rel="stylesheet" href="css">
+    <link rel="canonical" href="http://www.lemontree.pt/">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+    <img class="logo" src="images/logo.png" alt="LemonTreeStayLogo"/>
+    <img style="width:27%; min-width:20em;" src="images/soon.png" alt="InformationImage"/>
+    <form action="send.php" method="post">
+        <p><input class="input" type="text" id="email" autocomplete="off" onclick="retry()" name="email" autofocus/></p>
+        <input class="submit" type="submit" value="Squeeze" id="submit" onclick="return verify();"/>
+    </form>
+    
+    <script>
+        function verify() {
+            var email = new String(document.getElementById('email').value);
+            var characters = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+            if(characters.test(email)) {
+                return true;
+            }
+            document.getElementById("email").style.backgroundColor = "#FAE031";
+            document.getElementById("email").style.opacity = 0.8;
+            return false;
+        }
+        function retry() {
+            document.getElementById("email").style.backgroundColor = "white";
+            document.getElementById("email").style.opacity = 1;
+        }
+    </script>
+</body>
+</html>

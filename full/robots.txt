@@ -1,0 +1,11 @@
+User-agent: *
+
+Allow: /
+
+Disallow: /images/
+Disallow: /test/
+Disallow: /beta/
+Disallow: /send.php
+Disallow: /sent.html
+
+sitemap: http://www.
