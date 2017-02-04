@@ -1,0 +1,112 @@
+:root {
+  --margin-sections: 1em;
+}
+
+/********************************************
+ *  HEADER BEGIN                            *
+ ********************************************/
+
+header {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+}
+
+.header-img {
+    width:100%;
+}
+
+/********************************************
+ *  HEADER END                              *
+ ********************************************
+ *  INSTAGRAM-FEED BEGIN                    *
+ ********************************************/
+
+#instagram-feed, #instafeed {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.instafeed-image {
+    padding: 0;
+}
+
+.insta-image {
+    margin-top: 1em;
+}
+
+
+
+@media(max-width:767px) {   /* XS */
+    #instafeed {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .insta-image {
+        width: 97%;
+    }
+    .image-xs-left {
+        text-align: left;
+    }
+    .image-xs-right {
+        text-align: right;
+    }
+}
+
+@media (min-width: 768px) { /* SM */
+    #instafeed {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .insta-image {
+        width: 245px;
+    }
+    .image-left {
+        text-align: left;
+    }   
+    .image-center {
+        text-align: center;
+    }
+
+    .image-right {
+        text-align: right;
+    }
+}
+
+@media(min-width:992px) {   /* MD */
+    #instafeed {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .insta-image {
+        width: 315px;
+    }
+}
+
+/********************************************
+ *  INSTAGRAM-FEED END                      *
+ ********************************************
+ *  MEDIA BEGIN                             *
+ ********************************************/
+
+@media(max-width:767px) {   /* XS */
+    header, #instagram-feed {
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px) { /* SM */
+    header, #instagram-feed, #instafeed {
+        width: 765px;
+    }
+}
+
+@media(min-width:992px) {   /* MD */
+    header, #instagram-feed, #instafeed {
+         width: 970px;
+    }
+}
+
+/********************************************
+ *  MEDIA END                               *
+ ********************************************/

@@ -76,7 +76,6 @@ function resize() {
         $('.collapse').collapse("hide");
     }
     else {
-        console.log("1");
         $('.collapse').css("transition-duration", ".5s");
     }
 }
@@ -87,6 +86,6 @@ resize(); // call once initially
 //
 function collapseTimer() {
     setTimeout(function(){
-        $('.collapse').collapse("hide");
+        //$('.collapse').collapse("hide");
     }, 6000); 
 }
