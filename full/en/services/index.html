@@ -34,66 +34,65 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
+                <button type="button" onclick="collapseTimer()" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand page-scroll" href="../">
-                    <span>Lemon Tree</span>
+                    <!--<span>Lemon Tree</span>-->
+                    <img class="navbar-logo" src="../img/LT_Logo_Preto.png"/>
                 </a>
-                
             </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll navbar-button" href="../about">
+                        <a href="../about/" class="page-scroll navbar-button">
                             <span>About the Lemon</span>
                         </a>
                     </li>
                     <li class="divider-vertical"></li>
                     <li>
-                        <a class="page-scroll navbar-button" href="../rooms&apartements">
-                            <span>Rooms & Apartements</span>
+                        <a href="../rooms&apartements/" class="page-scroll navbar-button">
+                            <span>Rooms & Apartments</span>
                         </a>
                     </li>
                     <li class="divider-vertical"></li>
                     <li>
-                        <a class="page-scroll navbar-button" href="../services">
+                        <a href="./" class="page-scroll navbar-button">
                             <span class="active">Services</span>
                         </a>
                     </li>
                     <li class="divider-vertical"></li>
                     <li>
-                        <a class="page-scroll navbar-button" href="../faro&algarve">
+                        <a href="../faro&algarve/" class="page-scroll navbar-button">
                             <span>Faro & Algarve</span>
                         </a>
                     </li>
                     <li class="divider-vertical"></li>
                     <li>
-                        <a class="page-scroll navbar-button" href="../contact">
+                        <a href="../contact/" class="page-scroll navbar-button">
                             <span>Contact</span>
                         </a>
                     </li>
                     <li class="language-group">
                         <ul class="nav navbar-nav">
                             <li class="language">
-                                <a style="padding:0px;" class="page-scroll navbar-button zero" href="../../en/">
+                                <a style="padding:0px;" class="page-scroll navbar-button zero link-not-disabled" href="../en/">
                                     <span class="active">EN</span>
                                 </a>
                             </li>
                             <li class="divider-language"></li>
                             <li class="text-center language">
-                                <a style="padding:0px;" class="page-scroll navbar-button" href="../../pt/">
+                                <a style="padding:0px;" class="page-scroll navbar-button link-disabled">
                                     <span>PT</span>
                                 </a>
                             </li>
                             <li class="divider-language"></li>
                             <li class="language">
-                                <a style="padding:0px;" class="page-scroll navbar-button" href="../../fr/">
+                                <a style="padding:0px;" class="page-scroll navbar-button link-disabled">
                                     <span>FR</span>
                                 </a>
                             </li>
@@ -478,69 +477,80 @@
         </div>
     </section>
     
-    <footer> <!-- Footer Begin -->
+    <footer>
         <hr class="footer-divider thicker">
         <div class="container info">
             <span class="footer-contacts text-left">
-                Lemon Tree - 
                 <span class="not-mobile">
-                    <i class="fa fa-phone"></i> +351 123 456 789, info@lemontree.pt
+                    <span>
+                        <i class="fa fa-phone"></i> +351 123 456 789 
+                    </span>
+                    <span style="margin-left:1em;">
+                        <i class="fa fa-envelope-o"></i> info@lemontree.pt
+                    </span>
                 </span>
                 <span class="mobile">
-                    <a id="contacts-footer" data-toggle="collapse" href="#collapse-contacts" aria-expanded="false" aria-controls="collapse-contacts">Contacts<i id="arrow" class="fa fa-angle-down fa-fw" aria-hidden="true"></i></a>
+                    <a id="contacts-footer" data-toggle="collapse" href="#collapse-contacts" aria-expanded="false" aria-controls="collapse-contacts">
+                        <span>Contacts</span><i id="arrow" class="fa fa-angle-down fa-fw" aria-hidden="true"></i>
+                    </a>
                 </span>
             </span>
             <span class="footer-social-group text-right">
-                <a href="https://www.facebook.com" class="footer-social"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/lemontree_stay/" class="footer-social"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></a>
-                <a href="https://www.tripadvisor.com/" class="footer-social"><i class="fa fa-tripadvisor fa-fw" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/Lemon-Tree-610004232366183/" class="footer-social" target="_blank"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/lemontreestay/" class="footer-social" target="_blank"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></a>
+                <a href="https://www.tripadvisor.com/" class="footer-social" target="_blank"><i class="fa fa-tripadvisor fa-fw" aria-hidden="true"></i></a>
             </span>
             <div class="col-xs-12 mobile collapse" id="collapse-contacts">
                 <div class="contact-info">
-                    <i class="fa fa-phone"></i> +351 123 456 789, info@lemontree.pt
+                    <span>
+                        <i class="fa fa-phone"></i> +351 123 456 789 
+                    </span>
+                    <span style="margin-left:1em;">
+                        <i class="fa fa-envelope-o"></i> info@lemontree.pt
+                    </span>
                 </div>
             </div>
         </div>
         <hr class="footer-divider disapear">
         <div class="container site-map">
             <div class="col-md-2 col-sm-6 text-left">
-               <a href="http://lemontree.pt"><img class="footer-logo" src="../img/logo_lemontree.png"/></a>
+               <a href="http://lemontree.pt"><img class="footer-logo" src="../img/Lemon_Rodape_B.png" alt=""/></a>
             </div>
             <div class="col-md-2 col-sm-6">
-                <p class="footer-nav-lg"><a>About the Lemon</a></p>
-                <p class="footer-nav-sm"><a>Concept</a></p>
-                <p class="footer-nav-sm"><a>History</a></p>
-                <p class="footer-nav-sm"><a>Sustainability</a></p>
+                <p class="footer-nav-lg"><a href="../about/">About the Lemon</a></p>
+                <p class="footer-nav-sm"><a href="../about/#concept">Concept</a></p>
+                <p class="footer-nav-sm"><a href="../about/#history">History</a></p>
+                <p class="footer-nav-sm"><a href="../about/#sustainability">Sustainability</a></p>
             </div>
             <div class="col-md-2 col-sm-6">
-                <p class="footer-nav-lg"><a>Rooms & Apartements</a></p>
-                <p class="footer-nav-sm"><a>Squeezed</a></p>
-                <p class="footer-nav-sm"><a>Introverted</a></p>
-                <p class="footer-nav-sm"><a>Sweet</a></p>
-                <p class="footer-nav-sm"><a>Group Apartements</a></p>
-                <p class="footer-nav-sm"><a>Beach Apartements</a></p>
+                <p class="footer-nav-lg"><a href="../rooms&apartements/">Rooms & Apartments</a></p>
+                <p class="footer-nav-sm"><a href="../rooms&apartements/">Squeezed</a></p>
+                <p class="footer-nav-sm"><a href="../rooms&apartements/">Introverted</a></p>
+                <p class="footer-nav-sm"><a href="../rooms&apartements/">Sweet</a></p>
+                <p class="footer-nav-sm"><a href="../rooms&apartements/">Group Apartments</a></p>
+                <p class="footer-nav-sm"><a href="../rooms&apartements/">Beach Apartments</a></p>
             </div>
             <div class="col-md-2 col-sm-6">
-                <p class="footer-nav-lg"><a>Services</a></p>
-                <p class="footer-nav-sm"><a>Stay</a></p>
-                <p class="footer-nav-sm"><a>Apartements</a></p>
-                <p class="footer-nav-sm"><a>Beach Apartement</a></p>
+                <p class="footer-nav-lg"><a href="../services/" class="active">Services</a></p>
+                <p class="footer-nav-sm"><a href="../services/">Stay</a></p>
+                <p class="footer-nav-sm"><a href="../services/">Apartments</a></p>
+                <p class="footer-nav-sm"><a href="../services/">Beach Apartment</a></p>
             </div>
             <div class="col-md-2 col-sm-6">
-                <p class="footer-nav-lg"><a>Faro & Algarve</a></p>    
+                <p class="footer-nav-lg"><a href="../faro&algarve/">Faro & Algarve</a></p>    
             </div>
             <div class="col-md-2 col-sm-6">
-                <p class="footer-nav-lg"><a>Contacts</a></p>
-                <p class="footer-nav-sm"><a>Phones & E-mail</a></p>
-                <p class="footer-nav-sm"><a>Addresses</a></p>
-                <p class="footer-nav-sm"><a>Getting to the Lemon</a></p>
+                <p class="footer-nav-lg"><a href="../contact/">Contacts</a></p>
+                <p class="footer-nav-sm"><a href="../contact/">Phone & E-mail</a></p>
+                <p class="footer-nav-sm"><a href="../contact/">Addresses</a></p>
+                <p class="footer-nav-sm"><a href="../contact/">Getting to the Lemon</a></p>
             </div>
         </div>
         <hr class="footer-divider">
         <div class="container text-left copyright">
-            <span>&copy; <a href="http://lemontree.pt">Lemon Tree</a> 2016</span>
+            <span>&copy; <a class="footer-lemon" href="../">Lemon Tree</a> 2017</span>
         </div>
-    </footer> <!-- Footer End -->
+    </footer>
     
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>

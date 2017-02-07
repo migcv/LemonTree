@@ -9,10 +9,55 @@
 header {
     margin-left: auto;
     margin-right: auto;
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-top: 100px;
     padding-bottom: 0px;
     text-align: center;
     color: black;
+}
+
+@media(max-width:767px) {
+    #other-section {
+        width: 100%;
+    }
+    .square img {
+        width: 95%;
+    }
+    .rectangle img {
+        width: 99.9%;
+    }
+    .not-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    #other-section .container {
+        width: 765px;
+    }
+    .square img {
+        width: 96.5%;
+    }
+    .rectangle img {
+        width: 99.3%;
+    }
+    .mobile {
+        display: none;
+    }
+}
+
+@media(min-width:992px) {
+    #other-section .container  {
+         width: 69.3em;
+    }
+    .square img {
+        width: 97%;
+    }
+    .rectangle img {
+        width: 99.3%;
+    }
+    .mobile {
+        display: none;
+    }
 }
 
 /********************************************
@@ -26,6 +71,16 @@ header {
     margin-left: auto;
     margin-right: auto;
     color: black;
+}
+
+.newsletter {
+    background-image: url(img/random_image_rectangle.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 315px;
+    width: 641px;
+    padding: 0;
+    margin-right: .4em;
 }
 
 .square, .rectangle {

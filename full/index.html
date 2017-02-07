@@ -2,6 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    
+    <!-- Share Image -->
+    <meta property="og:image" content="http://lemontree.pt/img/TabLogo.jpg" />
+    
+    <title>Lemon Tree</title>
 
     <!-- Shortcut Icon -->
     <link href="./img/TabLogo.jpg" rel="shortcut icon">
@@ -16,17 +21,7 @@
     <link href="./css/lemontree.css" rel="stylesheet">
 
     <script type="text/javascript">
-        var language = window.navigator.userLanguage || window.navigator.language;
-        //alert(language); //works IE/SAFARI/CHROME/FF
-        if(language=="pt-PT" || language=="pt-BR") {
-            window.location.href = "./pt/";
-        }
-        else if(language=="fr") {
-            window.location.href = "./fr/";
-        }
-        else {
-            window.location.href = "./en/";
-        }
+        window.location.href = "./en";
     </script>
     <title>Lemon Tree</title>
 </head>

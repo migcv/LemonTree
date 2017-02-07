@@ -6,7 +6,7 @@ header {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: -10px;
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-top: 100px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
 }
 
 .header-img {

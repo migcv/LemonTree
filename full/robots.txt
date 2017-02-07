@@ -1,11 +1,17 @@
+User-Agent: GoogleBot
+Disallow: /img/
+Disallow: /en/img/
+
+User-Agent: Slurp
+Disallow: /img/
+Disallow: /en/img/
+
+User-Agent: bingbot
+Disallow: /img/
+Disallow: /en/img/
+
 User-agent: *
+Disallow: /img/
+Disallow: /en/img/
 
-Allow: /
-
-Disallow: /images/
-Disallow: /test/
-Disallow: /beta/
-Disallow: /send.php
-Disallow: /sent.html
-
-sitemap: http://www.
+sitemap: http://lemontree.pt/sitemap.xml

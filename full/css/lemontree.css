@@ -36,7 +36,7 @@
     color: black;
 }
 
-.link-not-disabled span {
+.navbar-button span {
     color:black;
     cursor: pointer;
 }
@@ -52,7 +52,7 @@
     box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
-li .link-not-disabled span:hover, .navbar-button .active  {
+li .navbar-button span:hover, .navbar-button .active  {
     color: #FFDD00;
 }
 
@@ -241,7 +241,7 @@ footer a {
     color: black;
 }
 
-.link-not-disabled a:hover, .footer-lemon:hover, #contacts-footer span:hover, .footer-social:hover, .link-not-disabled .active {
+.footer-nav-lg a:hover, .footer-nav-sm a:hover, .footer-lemon:hover, #contacts-footer span:hover, .footer-social:hover, .footer-nav-lg .active {
     text-decoration: none;
     color: #FFDD00;
 }

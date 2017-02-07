@@ -1,30 +1,4 @@
 //
-// Fade text and appears "Soon" on nav bar
-//
-function fadeText(ele, msg) {
-    var $fadeTime = 200;
-    var $time = 2000;
-    
-    var $text = ele.innerHTML
-    var $tip = $("#" + ele.id);
-    
-    $tip.css('width', $tip.width() + 'px');
-    
-    $tip.fadeOut($fadeTime, function() {
-        ele.style.textDecoration = "none";
-        ele.style.color = "black";
-        $tip.text(msg).fadeIn($fadeTime);
-        setTimeout(function(){
-            $tip.fadeOut($fadeTime, function() {
-                ele.style.textDecoration = "line-through";
-                ele.style.color = "#9B9898";
-                $tip.text($text.replace(/&amp;/g, '&')).fadeIn($fadeTime);
-                $tip.css('width', 'auto');
-            });
-        }, $time); 
-    });
-}
-//
 //  Close navbar when body is clicked
 //
 jQuery('body').bind('click', function(e) {
@@ -76,7 +50,6 @@ function resize() {
         $('.collapse').collapse("hide");
     }
     else {
-        console.log("1");
         $('.collapse').css("transition-duration", ".5s");
     }
 }
@@ -88,5 +61,5 @@ resize(); // call once initially
 function collapseTimer() {
     setTimeout(function(){
         //$('.collapse').collapse("hide");
-    }, 3000); 
+    }, 6000); 
 }
