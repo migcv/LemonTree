@@ -1,0 +1,170 @@
+/********************************************
+ *  HEADER BEGIN                            *
+ ********************************************/
+
+header {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+}
+
+.header-img {
+    width:100%;
+}
+
+/********************************************
+ *  HEADER END                              *
+ ********************************************
+ *  SERVICES BEGIN                          *
+ ********************************************/
+
+.section-header {
+    text-transform: uppercase;
+}
+
+.included-list ul {
+    width: 281px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+}
+
+.included-list li:before {
+    font-family: 'FontAwesome';
+    content: '\f00c';
+    margin:0 5px 0 -15px;
+}
+
+.wifi:before {
+    font-family: 'FontAwesome';
+    content: '\f1eb';
+    margin:0 5px 0 -15px;
+}
+
+.tv:before {
+    font-family: 'FontAwesome';
+    content: '\f26c';
+    margin:0 5px 0 -15px;
+}
+
+.laptop:before {
+    font-family: 'FontAwesome';
+    content: '\f109';
+    margin:0 5px 0 -15px;
+}
+
+.extra-services-title {
+    margin-top: -.8em;
+    margin-bottom: 2em;
+}
+
+h5 {
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#services .collapse {
+    padding: 0;
+}
+
+.content {
+    text-align: left;
+    text-justify: inter-word;
+    margin-bottom: 10px;
+}
+
+.text-muted {
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--hover-active-color);
+}
+
+.service {
+    padding: 0;
+    margin: 0px;
+}
+
+.text-right .content {
+    margin-left: .65em;
+}
+
+.mid .content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(max-width:767px) {
+    .service-image, .content {
+        width: 95%;
+    }
+    .services-images-md {
+        display: none;
+    }
+    .service-info {
+        width: 95%;
+    }
+    .text-left .service-info {
+        float: left;
+    }
+    .text-right .service-info {
+        float: right;
+    }
+    .text-right .content {
+        margin-left: 0;
+    }
+}
+
+@media(min-width:768px) {
+    .service-image, .content {
+        width: 96.5%;
+    }
+    .services-images-sm {
+        display: none;
+    }
+    .text-right .content {
+        margin-left: .65em;
+    }
+}
+
+@media(min-width:992px) {
+    .service-image, .content {
+        width: 97.5%;
+    }
+    .services-images-sm {
+        display: none;
+    }
+    .text-right .content {
+        margin-left: .68em;
+    }
+}
+
+/********************************************
+ *  SERVICES END                            *
+ ********************************************
+ *  MEDIA BEGIN                             *
+ ********************************************/
+
+@media(max-width:767px) {
+    header, #included, #services {
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        width: 765px;
+    }
+}
+
+@media(min-width:992px) {
+    header {
+        width: 970px;
+    }
+}
+/********************************************
+ *  MEDIA END                               *
+ ********************************************/

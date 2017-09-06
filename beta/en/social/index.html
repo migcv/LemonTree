@@ -61,19 +61,6 @@
     <!-- Instafeed.js -->
     <script type="text/javascript" src="instafeed.min.js"></script>
     
-    <script type="text/javascript">
-        var feed = new Instafeed({
-            get: 'user',
-            userId: '1678902750',
-            clientId: '37585c1e342646e09bb6617aa0a04cf8',
-            accessToken:'1678902750.1677ed0.846b3385f9b949979d4095a23350058b',
-            resolution: 'low_resolution',
-            template: '<div class="instafeed-image col-lg-4 col-md-4 col-sm-4 col-xs-6"><a href="{{link}}"><img class="insta-image" src="{{image}}"/></a></div>',
-            limit: 11,
-        });
-        feed.run();
-    </script>
-    
 </head>
     
 <body id="page-top" class="index">
@@ -167,10 +154,15 @@
                 </a>
             </div>
         </div>
+        <div class="load-button text-center col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <button onClick="loadMoreInstafeed" class="">
+                Load More
+            </button>
+        </div>
     </section>
 
     <footer>
-        <hr class="footer-divider thicker">
+        <hr class="footer-divider thicker" style="margin-top:.8em;">
         <div class="container info">
             <span class="footer-contacts text-left">
                 <span>

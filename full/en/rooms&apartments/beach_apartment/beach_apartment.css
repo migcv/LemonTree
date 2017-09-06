@@ -1,0 +1,80 @@
+/********************************************
+ *  HEADER BEGIN                            *
+ ********************************************/
+
+header {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+}
+
+.header-img {
+    width:100%;
+}
+
+/********************************************
+ *  HEADER END                              *
+ ********************************************
+ *  INTRODUCTION BEGIN                      *
+ ********************************************/
+
+.return-link {
+    width: 200px;
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333333;
+}
+
+.section-header {
+    text-transform: uppercase;
+}
+
+.content {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.image {
+    margin: 10px auto;
+    width: 50%;
+}
+
+#features ul {
+    width: 277px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#included ul {
+    width: 277px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/********************************************
+ *  INTRODUCTION END                        *
+ ********************************************
+ *  MEDIA BEGIN                             *
+ ********************************************/
+
+@media(max-width:767px) {
+    header, #introduction .container, #included .container {
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        width: 765px;
+    }
+}
+
+@media(min-width:992px) {
+    header{
+        width: 970px;
+    }
+}
+/********************************************
+ *  MEDIA END                               *
+ ********************************************/

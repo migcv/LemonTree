@@ -1,0 +1,177 @@
+/********************************************
+ *  HEADER BEGIN                            *
+ ********************************************/
+
+header {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -10px;
+    padding-top: 100px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+}
+
+.header-img {
+    width:100%;
+}
+/********************************************
+ *  HEADER END                              *
+ ********************************************
+ *  INTRODUCTION BEGIN                      *
+ ********************************************/
+
+#introduction {
+    padding-top: 25px;
+    font-size: 1.5em;
+}
+
+#introduction .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+@media(max-width:768px) { /* XS */
+    #introduction {
+        font-size: 17px;
+    }
+}
+
+/********************************************
+ *  INTRODUCTION END                        *
+ ********************************************
+ *  ROOMS BEGIN                             *
+ ********************************************/
+
+#stay {
+    padding-top: 0.5em;
+}
+
+#apartments {
+    padding-top: 1em;
+}
+
+.segment-header {
+    padding-bottom: 10px;
+}
+
+.rooms {
+    padding: 0;
+    margin: 0;
+}
+
+@media(max-width:767px) {
+    .segment-header {
+        margin-bottom: -.25em;
+    }
+    .room-image, .rooms a .text-center {
+        padding-top: 1em;
+        width: 97.5%;
+    }
+    .mobile {
+        display: inline;
+    }
+    .not-mobile {
+        display: none;
+    }
+    .left-sm {
+        text-align: left;
+    }
+    .right-sm {
+        text-align: right;
+    }
+}
+
+@media(min-width:768px) {
+    .category-square {
+        width: 96.5%;
+    } 
+    .room-image, .rooms a .text-center {
+        width: 96.5%;
+    }
+    .mobile {
+        display: none;
+    }
+    .not-mobile {
+        display: inline;
+    }
+    .left-md a .text-center {
+        float:left;
+    }
+    .center-md a .text-center {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .right-md a .text-center {
+        float:right;
+    }
+    .left-md {
+        text-align: left;
+    }
+    .center-md {
+        text-align: center;
+    }
+    .right-md {
+        text-align: right;
+    }
+}
+
+@media(min-width:992px) {
+    .category-square {
+        width: 97.5%;
+    }
+    .room-image, .rooms a .text-center {
+        width: 97.5%;
+    }
+    .mobile {
+        display: none;
+    }
+    .not-mobile {
+        display: inline;
+    }
+    .left-md a .text-center {
+        float:left;
+    }
+    .center-md a .text-center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .right-md a .text-center {
+        float:right;
+    }
+    .left-md {
+        text-align: left;
+    }
+    .center-md {
+        text-align: center;
+    }
+    .right-md {
+        text-align: right;
+    }
+}
+
+/********************************************
+ *  ROOMS END                               *
+ ********************************************
+ *  MEDIA BEGIN                             *
+ ********************************************/
+
+@media(max-width:767px) {   /* XS */
+    header, #introduction .container, #stay .container, #apartments .container {
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px) { /* SM */
+    header {
+        width: 765px;
+    }
+}
+
+@media(min-width:992px) {   /* MD */
+    header {
+        width: 970px;
+    }
+}
+/********************************************
+ *  MEDIA END                               *
+ ********************************************/

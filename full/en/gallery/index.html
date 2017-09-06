@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <!-- No cache archived -->
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+    
+    <title>Lemon Tree | About</title>
+     
+    <!-- Shortcut Icon -->
+    <link href="../../img/TabLogo.jpg" rel="shortcut icon">
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="../../css/lemontree.css" rel="stylesheet">
+    <link href="gallery.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    
+    <script src="./jquery.bsPhotoGallery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('li img').on('click',function(){
+                var src = $(this).attr('src');
+                var img = '<img src="' + src + '" class="img-responsive"/>';
+
+                //Start of new code
+                var index = $(this).parent('li').index();
+                var html = '';
+                html += img;
+                html += '<div style="height:25px;clear:both;display:block;">';
+                html += '<a class="controls next" href="'+ (index+2) + '">next &raquo;</a>';
+                html += '<a class="controls previous" href="' + (index) + '">&laquo; prev</a>';
+                html += '</div>';
+                //End of new code
+
+                $('#myModal').modal();
+                $('#myModal').on('shown.bs.modal', function(){
+                    $('#myModal .modal-body').html(html);
+                    //this will hide or show the right links:
+                    $('a.controls').trigger('click');
+                })
+                $('#myModal').on('hidden.bs.modal', function(){
+                    $('#myModal .modal-body').html('');
+                });
+            });
+            $(document).on('click', 'a.controls', function(){
+                var index = $(this).attr('href');
+                var src = $('ul.row li:nth-child('+ index +') img').attr('src');
+                $('.modal-body img').attr('src', src);
+                var newPrevIndex = parseInt(index) - 1;
+                var newNextIndex = parseInt(newPrevIndex) + 2;
+
+                if($(this).hasClass('previous')){
+                    $(this).attr('href', newPrevIndex);
+                    $('a.next').attr('href', newNextIndex);
+                }else{
+                    $(this).attr('href', newNextIndex);
+                    $('a.previous').attr('href', newPrevIndex);
+                }
+                var total = $('ul.row li').length + 1;
+                //hide next button
+                if(total === newNextIndex){
+                    $('a.next').hide();
+                }else{
+                    $('a.next').show()
+                }
+                //hide previous button
+                if(newPrevIndex === 0){
+                    $('a.previous').hide();
+                }else{
+                    $('a.previous').show()
+                }
+                return false;
+            });
+        })
+    </script>
+    
+</head>
+    
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" onclick="collapseTimer()" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="../">
+                    <!--<span>Lemon Tree</span>-->
+                    <img class="navbar-logo" src="../img/LT_Logo_Preto.png"/>
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="./" class="page-scroll navbar-button">
+                            <span class="active">About the Lemon</span>
+                        </a>
+                    </li>
+                    <li class="divider-vertical"></li>
+                    <li>
+                        <a href="../rooms&apartements/" class="page-scroll navbar-button">
+                            <span>Rooms & Apartments</span>
+                        </a>
+                    </li>
+                    <li class="divider-vertical"></li>
+                    <li>
+                        <a href="../services/" class="page-scroll navbar-button">
+                            <span>Services</span>
+                        </a>
+                    </li>
+                    <li class="divider-vertical"></li>
+                    <li>
+                        <a href="../faro&algarve/" class="page-scroll navbar-button">
+                            <span>Faro & Algarve</span>
+                        </a>
+                    </li>
+                    <li class="divider-vertical"></li>
+                    <li>
+                        <a href="../contact/" class="page-scroll navbar-button">
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                    <li class="language-group">
+                        <ul class="nav navbar-nav">
+                            <li class="language">
+                                <a style="padding:0px;" class="page-scroll navbar-button zero link-not-disabled" href="../en/">
+                                    <span class="active">EN</span>
+                                </a>
+                            </li>
+                            <li class="divider-language"></li>
+                            <li class="text-center language">
+                                <a style="padding:0px;" class="page-scroll navbar-button link-disabled">
+                                    <span>PT</span>
+                                </a>
+                            </li>
+                            <li class="divider-language"></li>
+                            <li class="language">
+                                <a style="padding:0px;" class="page-scroll navbar-button link-disabled">
+                                    <span>FR</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    
+    <header>
+        <img class="header-img" src="../img/header.png"/>    
+    </header>
+    
+    <section id="about">
+        <div class="container">
+            <ul class="row">
+                <li class="col-md-4 col-sm-4 col-xs-6 square left-md left-sm">
+                    <img class="square-img" src="../img/square.png"/>
+                </li>
+                <li class="col-md-4 col-sm-4 col-xs-6 square center-md right-sm">
+                    <img class="square-img" src="../img/beach.png"/>
+                </li>
+                <li class="col-md-4 col-sm-4 col-xs-6 square right-md left-sm">
+                    <img class="square-img" src="../img/beach_square.png"/>
+                </li>
+                <li class="col-md-4 col-sm-4 col-xs-6 square left-md right-sm">
+                    <img class="square-img" src="../img/squezed.png"/>
+                </li>
+                <li class="col-md-4 col-sm-4 col-xs-6 square center-md left-sm">
+                    <img class="square-img" src="../img/group_square.png"/>
+                </li>
+                <li class="col-md-4 col-sm-4 col-xs-6 square right-md right-sm">
+                    <img class="square-img" src="../img/stay_square.png"/>
+                </li>
+            </ul>
+        </div>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+    </section>
+    
+    <footer>
+        <hr class="footer-divider thicker">
+        <div class="container info">
+            <span class="footer-contacts text-left">
+                <span class="not-mobile">
+                    <span>
+                        <i class="fa fa-phone"></i> +351 123 456 789 
+                    </span>
+                    <span style="margin-left:1em;">
+                        <i class="fa fa-envelope-o"></i> info@lemontree.pt
+                    </span>
+                </span>
+                <span class="mobile">
+                    <a id="contacts-footer" data-toggle="collapse" href="#collapse-contacts" aria-expanded="false" aria-controls="collapse-contacts">
+                        <span>Contacts</span><i id="arrow" class="fa fa-angle-down fa-fw" aria-hidden="true"></i>
+                    </a>
+                </span>
+            </span>
+            <span class="footer-social-group text-right">
+                <a href="https://www.facebook.com/Lemon-Tree-610004232366183/" class="footer-social" target="_blank"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/lemontreestay/" class="footer-social" target="_blank"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></a>
+                <a href="https://www.tripadvisor.com/" class="footer-social" target="_blank"><i class="fa fa-tripadvisor fa-fw" aria-hidden="true"></i></a>
+            </span>
+            <div class="col-xs-12 mobile collapse" id="collapse-contacts">
+                <div class="contact-info">
+                    <span>
+                        <i class="fa fa-phone"></i> +351 123 456 789 
+                    </span>
+                    <span style="margin-left:1em;">
+                        <i class="fa fa-envelope-o"></i> info@lemontree.pt
+                    </span>
+                </div>
+            </div>
+        </div>
+        <hr class="footer-divider disapear">
+        <div class="container site-map">
+            <div class="col-md-2 col-sm-6 text-left">
+               <a href="http://lemontree.pt"><img class="footer-logo" src="../img/Lemon_Rodape_B.png" alt=""/></a>
+            </div>
+            <div class="col-md-2 col-sm-6">
+                <p class="footer-nav-lg"><a href="./" class="active">About the Lemon</a></p>
+                <p class="footer-nav-sm"><a href="#concept">Concept</a></p>
+                <p class="footer-nav-sm"><a href="#history">History</a></p>
+                <p class="footer-nav-sm"><a href="#sustainability">Sustainability</a></p>
+            </div>
+            <div class="col-md-2 col-sm-6">
+                <p class="footer-nav-lg"><a href="../rooms&apartements/">Rooms & Apartments</a></p>
+                <p class="footer-nav-sm"><a href="../rooms&apartements/">Squeezed</a></p>
+                <p class="footer-nav-sm"><a href="../rooms&apartements/">Introverted</a></p>
+                <p class="footer-nav-sm"><a href="../rooms&apartements/">Sweet</a></p>
+                <p class="footer-nav-sm"><a href="../rooms&apartements/">Group Apartments</a></p>
+                <p class="footer-nav-sm"><a href="../rooms&apartements/">Beach Apartments</a></p>
+            </div>
+            <div class="col-md-2 col-sm-6">
+                <p class="footer-nav-lg"><a href="../services/">Services</a></p>
+                <p class="footer-nav-sm"><a href="../services/">Stay</a></p>
+                <p class="footer-nav-sm"><a href="../services/">Apartments</a></p>
+                <p class="footer-nav-sm"><a href="../services/">Beach Apartment</a></p>
+            </div>
+            <div class="col-md-2 col-sm-6">
+                <p class="footer-nav-lg"><a href="../faro&algarve/">Faro & Algarve</a></p>    
+            </div>
+            <div class="col-md-2 col-sm-6">
+                <p class="footer-nav-lg"><a href="../contact/">Contacts</a></p>
+                <p class="footer-nav-sm"><a href="../contact/">Phone & E-mail</a></p>
+                <p class="footer-nav-sm"><a href="../contact/">Addresses</a></p>
+                <p class="footer-nav-sm"><a href="../contact/">Getting to the Lemon</a></p>
+            </div>
+        </div>
+        <hr class="footer-divider">
+        <div class="container text-left copyright">
+            <span>&copy; <a class="footer-lemon" href="../">Lemon Tree</a> 2017</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="../../js/lemontree.js"></script>
+</body>
+    
+</html>

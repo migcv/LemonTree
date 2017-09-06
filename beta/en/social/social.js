@@ -1,3 +1,13 @@
+var feed = new Instafeed({
+    get: 'user',
+    userId: '1678902750',
+    clientId: '37585c1e342646e09bb6617aa0a04cf8',
+    accessToken:'1678902750.1677ed0.846b3385f9b949979d4095a23350058b',
+    resolution: 'low_resolution',
+    template: '<div class="instafeed-image col-lg-4 col-md-4 col-sm-4 col-xs-6"><a href="{{link}}"><img class="insta-image" src="{{image}}"/></a></div>',
+    limit: 11,
+});
+feed.run();
 /*
  *  Adds classes to allign instafeed images
  */
@@ -11,3 +21,7 @@ function setClassesInstaImages() {
     }
 }
 window.onload = setClassesInstaImages;
+
+function loadMoreInstafeed() {
+    feed.next();
+}

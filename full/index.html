@@ -3,6 +3,14 @@
 <head>
     <meta charset="utf-8">
     
+    <meta property="og:title" content="Lemon Tree" />
+    <meta property="og:description" content="Your place to stay in Algarve" />
+    <meta property="og:image" content="http://lemontree.pt/img/TabLogo.jpg" />
+    <meta property="og:url" content="http://lemontree.pt/en/" />
+    
+    <meta name="description" content="Best Place to stay in Algarve" />
+    <meta name="author" content="Lemon Tree.Lda" />
+    
     <!-- Share Image -->
     <meta property="og:image" content="http://lemontree.pt/img/TabLogo.jpg" />
     
@@ -19,6 +27,27 @@
 
     <!-- Custom CSS -->
     <link href="./css/lemontree.css" rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type='application/ld+json'> 
+    {
+      "@context": "http://www.schema.org",
+      "@type": "Hostel",
+      "name": "Lemon Tree",
+      "url": "http://lemontree.pt/en/",
+      "logo": "http://lemontree.pt/en/img/LT_Logo_Preto.png",
+      "image": "http://lemontree.pt/en/img/LT_Logo_Preto.png",
+      "description": "Your place to stay in Algarve",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Praça da Liberdade",
+        "addressLocality": "Faro",
+        "addressRegion": "Algarve",
+        "postalCode": "8000",
+        "addressCountry": "Portugal"
+      }
+    }
+    </script>
 
     <script type="text/javascript">
         window.location.href = "./en";

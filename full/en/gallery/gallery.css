@@ -9,33 +9,47 @@
 header {
     margin-left: auto;
     margin-right: auto;
-    padding-top: 100px;
-    padding-bottom: 0px;
-    text-align: center;
-    color: black;
+    margin-bottom: 1em;
+    padding-top: 100px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+}
+
+.header-img {
+    width:100%;
 }
 
 /********************************************
  *  HEADER END                              *
  ********************************************
- *  OHTER SECTION BEGIN                     *
+ *  PHOTOS BEGIN                            *
  ********************************************/
 
-#other-section {
-    /*margin-top: var(--margin-sections);*/
-    margin-left: auto;
-    margin-right: auto;
-    color: black;
+ul {
+  padding:0 0 0 0;
+  margin:0 0 0 0;
 }
-
-.row {
-    margin-top: 1em;
+ul li {
+  list-style:none;
+}
+ul li img {
+  cursor: pointer;
 }
 
 .square {
     margin: 0;
     margin-bottom: 1em;
     padding: 0;
+}
+
+.controls{
+    width:50px;
+    display:block;
+    font-size:11px;
+    padding-top:8px;
+    font-weight:bold;
+}
+.next {
+    float:right;
+    text-align:right;
 }
 
 @media(max-width:767px) { /* XS */
@@ -98,34 +112,29 @@ header {
     }
 }
 
-footer {
-    margin-top: -1em;
-}
-
 /********************************************
- *  OHTER SECTION END                       *
+ *  PHOTOS END                              *
  ********************************************
  *  MEDIA BEGIN                             *
  ********************************************/
 
-@media(max-width:767px) {
-    header, #newsletter, #other-section .container {
+@media(max-width:767px) { /* XS */
+    header {
         width: 90%;
     }
 }
 
-@media (min-width: 768px) {
-    header, #newsletter, #other-section .container {
+@media (min-width: 768px) { /* SM */
+    header {
         width: 765px;
     }
 }
 
-@media(min-width:992px) {
-    header, #newsletter, #other-section .container {
-         width: 970px;
+@media(min-width:992px) { /* MD */
+    header{
+        width: 970px;
     }
 }
-
 /********************************************
  *  MEDIA END                               *
  ********************************************/

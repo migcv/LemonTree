@@ -1,7 +1,3 @@
-:root {
-  --margin-sections: 1em;
-}
-
 /********************************************
  *  HEADER BEGIN                            *
  ********************************************/
@@ -9,39 +5,52 @@
 header {
     margin-left: auto;
     margin-right: auto;
-    padding-top: 100px;
-    padding-bottom: 0px;
-    text-align: center;
-    color: black;
+    padding-top: 100px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+}
+
+.header-img {
+    width:100%;
 }
 
 /********************************************
  *  HEADER END                              *
  ********************************************
- *  OHTER SECTION BEGIN                     *
+ *  INTRODUCTION BEGIN                      *
  ********************************************/
 
-#other-section {
-    /*margin-top: var(--margin-sections);*/
-    margin-left: auto;
-    margin-right: auto;
-    color: black;
+.return-link {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333333;
 }
 
-.row {
+.catogary-title {
+    text-transform: uppercase;
+}
+
+.content {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#included ul {
+    margin-left: 1.6em;
+}
+
+#nav-footer {
     margin-top: 1em;
-}
+} 
 
-.square {
-    margin: 0;
-    margin-bottom: 1em;
-    padding: 0;
+.return-link:hover, .active {
+    text-decoration: none;
+    color: #FFDD00;
 }
 
 @media(max-width:767px) { /* XS */
-    .square img {
-        margin: 0;
-        padding: 0;
+    .not-mobile {
+        display: none;
+    }
+    .image {
         width: 97.5%;
     }
     .left-sm {
@@ -50,31 +59,43 @@ header {
     .right-sm {
         text-align: right;
     }
+    .divider {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media (min-width: 768px) { /* SM */
-    #other-section .container {
+    #nav-footer .container {
         width: 765px;
-    }
-    .square img {
-        width: 96.5%;
-    }
-    .rectangle img {
-        width: 99.3%;
     }
     .mobile {
         display: none;
     }
+    .image {
+        width: 96.5%;
+    }
+    .divider {
+        width: 765px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media(min-width:992px) {   /* MD */
-    #other-section .container  {
+    #nav-footer .container  {
          width: 69.3em;
     }
     .mobile {
         display: none;
     }
-    .square-img, .square a .text-center {
+    .divider {
+        width: 69.3em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .image {
         width: 97.5%;
     }
     .left-md img, .left-md a .text-center {
@@ -98,34 +119,29 @@ header {
     }
 }
 
-footer {
-    margin-top: -1em;
-}
-
 /********************************************
- *  OHTER SECTION END                       *
+ *  INTRODUCTION END                        *
  ********************************************
  *  MEDIA BEGIN                             *
  ********************************************/
 
 @media(max-width:767px) {
-    header, #newsletter, #other-section .container {
+    header, #introduction .container, #included .container, #nav-footer .container {
         width: 90%;
     }
 }
 
 @media (min-width: 768px) {
-    header, #newsletter, #other-section .container {
+    header, #nav-footer .container {
         width: 765px;
     }
 }
 
 @media(min-width:992px) {
-    header, #newsletter, #other-section .container {
-         width: 970px;
+    header{
+        width: 970px;
     }
 }
-
 /********************************************
  *  MEDIA END                               *
  ********************************************/

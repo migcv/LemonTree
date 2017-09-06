@@ -22,6 +22,10 @@ header {
  *  INSTAGRAM-FEED BEGIN                    *
  ********************************************/
 
+#instagram-feed {
+    margin-bottom: 1em;
+}
+
 #instagram-feed, #instafeed {
     margin-left: auto;
     margin-right: auto;
@@ -35,7 +39,10 @@ header {
     margin-top: 1em;
 }
 
-
+.load-button {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
 
 @media(max-width:767px) {   /* XS */
     #instafeed {
